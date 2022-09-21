@@ -1,0 +1,71 @@
+h1{
+    color: white;
+}
+body{
+    /* background-color: grey; */
+    background: rgb(42, 42, 48);
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-container{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(30, 30, 34);
+    
+}
+.nav-items{
+    display: flex;
+    /* padding: 10px; */
+    list-style: none;
+    color: white;
+}
+.hcl-logo{
+    padding: 5px;
+    margin: 0px;
+    width: 200px;
+}
+/* selects all li in class nav-items... same as without ">"? 
+    No, it is not the same > only looks at direct children whereas
+    no ">" looks at all contained tags*/
+.nav-items > li{    
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    /* font-style: italic; */
+    /* text-decoration: underline;
+    border: 2px solid red;
+    background: green; */
+    margin: 0px;
+}
+
+.body-one{
+    margin: 0px 20px;
+    /* border: 2px solid red; */
+    /* background: white; */
+    background: rgb(42, 42, 48);
+    color: white;
+    font-size: 20px;
+    background-image: url(./images/image-hcl.png);
+    background-repeat: no-repeat;
+    background-position: right 50%;
+
+}
+.body-one > ul > li{
+    /* margin: 20px 20px; */
+    padding-block: 10px;
+}
+.body-one > ul > li::marker{
+    /* margin: 20px 20px; */
+    /* padding-block: 10px; */
+    color: royalblue;
+    font-size: 1.4rem;
+}
+
+.footer-one{
+    color: white;
+}
